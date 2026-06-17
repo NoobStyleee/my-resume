@@ -20,7 +20,7 @@ export const resumeFiles: Record<string, ResumeFile> = {
   "contact": {
     "email": "mikledanse@mail.ru",
     "github": "github.com/NoobStyleee",
-    "linkedin": "linkedin.com/in/michael-noobstyle-roedelbronn"
+    "linkedin": "linkedin.com/in/michael-roedelbronn-noobstyle/"
   },
   "summary": "Passionate junior developer specialized in building functional, secure, and responsive web applications. Driven by writing clean, modular code and continually adding new tools to my tech stack.",
   "interests": [
