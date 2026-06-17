@@ -92,7 +92,7 @@ export const developerTools: string[] = [
     "title": "DevSpace Portfolio Hub",
     "techStack": ["Next.js", "TypeScript", "CSS Modules"],
     "description": "An interactive, web-based VS Code clone designed to showcase my engineering skills, professional history, and project details natively in-browser.",
-    "liveLink": "https://your-portfolio.vercel.app",
+    "liveLink": "https://my-resume-mikledansee-9799s-projects.vercel.app/",
     "githubRepo": "https://github.com/NoobStyleee/my-resume"
   },
   {

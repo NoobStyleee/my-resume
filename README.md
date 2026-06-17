@@ -8,7 +8,7 @@
 
 An interactive, browser-based **VS Code workspace clone** engineered from scratch to serve as an immersive digital resume. Built on top of the next-generation Next.js 16 framework and React 19, this portfolio provides an authentic IDE environment for recruiters and technical leads to evaluate my background, project schemas, and code architecture.
 
-🔗 **[Live Production Link]()**
+🔗 **[Live Production Link](https://my-resume-mikledansee-9799s-projects.vercel.app/)**
 
 ---
 
@@ -37,37 +37,26 @@ An interactive, browser-based **VS Code workspace clone** engineered from scratc
 Ensure you have [Node.js](https://nodejs.org/) installed, then spin up the project locally with this sequence:
 
 1. Clone down the repository:
+
    ```bash
    git clone [https://github.com/NoobStyleee/my-resume.git](https://github.com/NoobStyleee/my-resume.git)
    cd my-resume
    ```
 
-Install the modern dependency tree:
+2. Install the modern dependency tree:
 
 Bash
 npm install
-Launch the hot-reloading Next.js local server:
+
+3. Launch the hot-reloading Next.js local server:
 
 Bash
 npm run dev
-Open your browser framework of choice and point it to:
+
+4. Open your browser framework of choice and point it to:
 
 Plaintext
 http://localhost:3000
-
-├── src/
-│ ├── app/
-│ │ ├── layout.tsx # Global fonts and application entry wrap
-│ │ └── page.tsx # Layout state orchestrator (Sidebar, Tabs, Active States)
-│ ├── components/
-│ │ ├── Sidebar/ # Sliding file navigator tree
-│ │ ├── Tabs/ # Active file buffer tracking system
-│ │ ├── Editor/ # Dynamic code view engine and integrated terminal panels
-│ │ ├── StatusBar/ # Error status mockups serving as custom social redirects
-│ │ └── FloatingPDFButton/ # The custom VS Code system notification popup container
-│ └── data/
-│ └── files.ts # JSON database storing bio descriptions and experience metrics
-└── public/ # Root serving folder for standard downloadable PDF resumes
 
 👨‍💻 Author
 Michael Roedelbronn

@@ -8,7 +8,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "iahmadjw - Visual Studio Code Resume",
+  title: "VS Code Resume - Michael Roedelbronn",
   description: "An interactive full-stack developer portfolio built to look like an IDE workspace.",
 };
 
