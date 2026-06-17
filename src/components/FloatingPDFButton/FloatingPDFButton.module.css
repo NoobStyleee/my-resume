@@ -1,0 +1,124 @@
+.notificationToast {
+    position: absolute;
+    bottom: 36px;
+    right: 16px;
+    width: 320px;
+    background-color: #252526;
+    border: 1px solid #454545;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    font-family: monospace;
+    z-index: 100;
+    animation: slideIn 0.2s ease-out;
+}
+
+.header {
+    background-color: #2d2d2d;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    color: #aaaaaa;
+    border-bottom: 1px solid #3c3c3c;
+}
+
+.bell {
+    margin-right: 6px;
+}
+
+.title {
+    flex: 1;
+}
+
+.closeTopBtn {
+    background: none;
+    border: none;
+    color: #858585;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.closeTopBtn:hover {
+    color: #fff;
+}
+
+.body {
+    padding: 12px;
+}
+
+.message {
+    font-size: 13px;
+    line-height: 1.4;
+    color: #cccccc;
+    margin: 0 0 12px 0;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.primaryBtn {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-family: monospace;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.1s;
+}
+
+.primaryBtn:hover {
+    background-color: #0062a3;
+}
+
+.secondaryBtn {
+    background-color: #3e3e3f;
+    color: #cccccc;
+    border: none;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-family: monospace;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.secondaryBtn:hover {
+    background-color: #4e4e4f;
+    color: #fff;
+}
+
+.collapsedBtn {
+    position: absolute;
+    bottom: 40px;
+    right: 16px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    border-radius: 2px;
+}
+
+.collapsedBtn:hover {
+    background-color: #0062a3;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

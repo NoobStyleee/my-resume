@@ -1,0 +1,77 @@
+.statusBar {
+    height: 24px;
+    background-color: #007acc;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    font-family: monospace;
+    font-size: 12px;
+    user-select: none;
+    z-index: 50;
+}
+
+.leftSection,
+.rightSection {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    height: 100%;
+}
+
+.gitBranch,
+.syncIcon,
+.statusLink,
+.item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 100%;
+    padding: 0 4px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.gitBranch:hover,
+.syncIcon:hover,
+.statusLink:hover,
+.item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.socialsContainer {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 100%;
+}
+
+.statusLink {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.errorIcon {
+    color: #f87171;
+    font-weight: bold;
+}
+
+.warningIcon {
+    color: #fbbf24;
+    font-weight: bold;
+}
+
+.linkText {
+    border-bottom: 1px dashed transparent;
+}
+
+.statusLink:hover .linkText {
+    border-bottom-color: #ffffff;
+}
+
+@media (max-width: 640px) {
+    .rightSection {
+        display: none;
+    }
+}

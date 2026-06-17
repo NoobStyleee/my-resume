@@ -1,0 +1,235 @@
+.mainWorkspace {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.editorContainer {
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto;
+    background-color: #1e1e1e;
+    min-height: 0;
+}
+
+.codeWrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    align-items: start;
+}
+
+.lineNumbers {
+    color: #858585;
+    text-align: right;
+    padding-right: 16px;
+    user-select: none;
+    border-right: 1px solid #3c3c3c;
+    margin-right: 16px;
+}
+
+.lineNumber {
+    line-height: 1.6;
+}
+
+.codePre {
+    white-space: pre-wrap;
+    word-break: break-all;
+    color: #9cdcfe;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    line-height: 1.6;
+}
+
+.terminalPanel {
+    height: 30%;
+    min-height: 140px;
+    background-color: #1e1e1e;
+    border-top: 1px solid #3c3c3c;
+    display: flex;
+    flex-direction: column;
+}
+
+.terminalHeader {
+    display: flex;
+    background-color: #1e1e1e;
+    padding: 0 16px;
+    gap: 16px;
+    height: 30px;
+    align-items: center;
+    border-bottom: 1px solid #2d2d2d;
+    user-select: none;
+}
+
+.terminalTab {
+    background: none;
+    border: none;
+    color: #858585;
+    font-size: 12px;
+    font-family: monospace;
+    cursor: pointer;
+    padding: 4px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+}
+
+.terminalTab:hover {
+    color: #e1e1e1;
+}
+
+.activeTab {
+    color: #ffffff;
+    border-bottom: 2px solid #007acc;
+}
+
+.badge {
+    background-color: #3c3c3c;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    margin-left: 4px;
+}
+
+.terminalBody {
+    flex: 1;
+    padding: 12px 20px;
+    overflow-y: auto;
+    font-size: 13px;
+    line-height: 1.5;
+    background-color: #1e1e1e;
+    color: #cccccc;
+}
+
+.terminalConsole {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.commandLog {
+    color: #4ade80;
+}
+
+.successLog {
+    color: #60a5fa;
+}
+
+.standardLog {
+    color: #aaaaaa;
+}
+
+.outputText,
+.problemsText {
+    color: #858585;
+    font-style: italic;
+}
+
+.cursorInput {
+    display: flex;
+    align-items: center;
+    color: #4ade80;
+    margin-top: 4px;
+}
+
+.blinkCursor {
+    animation: blink 1s step-end infinite;
+    color: #ffffff;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.emptyState {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #555555;
+    font-family: monospace;
+    background-color: #1e1e1e;
+    flex: 1;
+}
+
+.emptyIcon {
+    font-size: 60px;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 767px) {
+    .editorContainer {
+        padding: 14px;
+    }
+
+    .codeWrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .lineNumbers {
+        display: none;
+    }
+
+    .codePre {
+        font-size: 12px;
+    }
+
+    .terminalPanel {
+        height: 25%;
+        min-height: 100px;
+    }
+
+    .terminalBody {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .editorContainer {
+        padding: 20px;
+    }
+
+    .codePre {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .editorContainer {
+        padding: 24px;
+    }
+
+    .codePre {
+        font-size: 14px;
+    }
+}
+
+.clickableLink {
+    color: #4fc1ff;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+    transition: color 0.1s ease;
+}
+
+.clickableLink:hover {
+    color: #60a5fa;
+    background-color: rgba(255, 255, 255, 0.05);
+}
