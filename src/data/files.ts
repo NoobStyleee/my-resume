@@ -8,7 +8,7 @@ export const resumeFiles: Record<string, ResumeFile> = {
     content: `{
   "name": "Michael Roedelbronn",
   "title": "Full-Stack Developer & Entrepreneur",
-  "location": "Neuss, Germany",
+  "location": "Langenfeld, Germany",
   "languages": ["German (Native)", "Ukrainian (Native)", "Russian (Native)", "English (Intermediate)"],
   "summary": "A highly disciplined full-stack developer with a strong entrepreneurial background. Former international elite athlete turned business operator, now translating 8+ years of sales, operations, and asset management experience into building robust, scalable web architectures. Exceptional at bridging the gap between business logic and clean, efficient code.",
   "coreTraits": [
@@ -88,6 +88,14 @@ export const developerTools: string[] = [
     language: 'json',
     icon: '🚀',
     content: `[
+    {
+    "title": "Harmony DevForge",
+    "techStack": ["Next.js", "TypeScript", "Node.js", "Express", "CSS Modules"],
+    "description": "A full-stack, dual-repository web application built with Next.js and TypeScript on the frontend and Express/Node.js on the backend. Engineered to deliver a modern, high-performance web platform featuring a responsive interface, custom modular UI components, and smooth API integration.",
+    "liveLink": "https://devforge-frontend-steel.vercel.app/",
+    "githubRepo(Backend)": "https://github.com/hlieb-kotiun/devforge-backend",
+    "githubRepo(Frontend)": "https://github.com/hlieb-kotiun/devforge-frontend"
+  },
   {
     "title": "DevSpace Portfolio Hub",
     "techStack": ["Next.js", "TypeScript", "CSS Modules"],
